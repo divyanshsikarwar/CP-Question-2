@@ -62,3 +62,5 @@ With differences 10 and 100, all possible series for the second test case are th
 0, 100, 200, 210
 0, 100, 200, 300
 Hence the answer 30 120 210 300.
+
+# Just add your file in respective lang or edit my solution.
