@@ -8,29 +8,10 @@ import sys
 
 # Complete the stones function below.
 def stones(n, a, b):
-    x=[a+a,b+a,b+b]
-    print(x)
-    y=[]
-    z=0
-    for j in range (3,n):
-        if(j%2!=0):
-            for i in (x):
-                y.append(i+a)
-                y.append(i+b)
-            y=list(set(y))
-            x=[]
-        else:
-            for i in y:
-                x.append(i+a)
-                x.append(i+b)
-            x=list(set(x))
-            y=[]
-    if(len(y)==0):
-        return (sorted(x))
-    else:
-        return (sorted(y))
-
-
+    for _ in range(int(input())):
+    n,a,b = int(input())
+    a,b = sorted([int(input()), int(input())])
+    print(*range((n-1)*a, (n-1)*b+1, b-a or 1))
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
